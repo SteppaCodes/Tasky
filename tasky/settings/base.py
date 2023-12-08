@@ -32,6 +32,8 @@ THIRD_PARTY_APPS = [
     "cloudinary",
     "cloudinary_storage",
     "debug_toolbar",
+    "sweetify",
+    
 ]
 
 LOCAL_APPS =[
@@ -54,6 +56,9 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+#sweetify config
+SWEETIFY_SWEETALERT_LIBRARY = "sweetalert2"
 
 ROOT_URLCONF = 'tasky.urls'
 
