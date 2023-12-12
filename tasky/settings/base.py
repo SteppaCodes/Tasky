@@ -44,6 +44,8 @@ LOCAL_APPS =[
 
 INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS + THIRD_PARTY_APPS
 
+AUTH_USER_MODEL = "accounts.User"
+
 MIDDLEWARE = [
     #debug toolbar middleware
     'debug_toolbar.middleware.DebugToolbarMiddleware',
