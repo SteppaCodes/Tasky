@@ -42,9 +42,13 @@ class UserAdmin(BaseUserAdmin):
                 "email",
                 "password1",
                 "password2",
+                "avatar",
+                "is_email_verified",
+                "terms_agreement",
                 "is_staff",
                 "is_superuser",
-                "is_active"
+                "is_active",
+                
             ),
           },
         ),
