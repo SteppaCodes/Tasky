@@ -39,7 +39,7 @@ THIRD_PARTY_APPS = [
 LOCAL_APPS =[
     "apps.accounts",
     "apps.common",
-    "apps.task_manager",
+    par"apps.task_manager",
 ]
 
 INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS + THIRD_PARTY_APPS
