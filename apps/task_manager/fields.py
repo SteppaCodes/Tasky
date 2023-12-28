@@ -2,7 +2,6 @@ from django.db import models
 from django.core.exceptions import ObjectDoesNotExist
 
 
-
 class OrderField(models.PositiveIntegerField):
     def __init__(self, for_field=None, *args, **Kwargs):
         self.for_field = for_field
@@ -43,7 +42,6 @@ class ParentTaskField(models.OneToOneField):
     def pre_save(self, model_instance, add):
         
         if getattr(model_instance, self.attname) is None:
-            print(model_instance)
             try:
                 if self.for_field:
                     qs = self.model.objects.all()
